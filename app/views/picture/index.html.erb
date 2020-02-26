@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class ="main-all">
+      <div class ="header">
+        <div class ="header-main">
+          <div class ="main-home">
+            <%= link_to('#') do %>
+              <i class="fab fa-instagram"></i>
+                | tbtgram
+            <% end %>
+          </div>
+          <div class ="main-surch">
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+          <div class ="main-icon">
+            <%= link_to('#') do %>
+              <i class="far fa-compass"></i>
+            <% end %>
+
+            <%= link_to('#') do %>
+              <i class="far fa-heart"></i>
+            <% end %>
+
+            <%= link_to('#') do %>
+              <i class="fas fa-home"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class ="main">
+        <div class ="post">
+          <div class ="main-post">
+            <div class ="post-header">
+              <div class ="acount-id">
+                <%= link_to('#') do %>
+                  jsbryuji_official
+                <% end %>
+              </div>
+              <div class ="acount-managration">
+                <%= link_to('#') do %>
+                  <i class="fas fa-ellipsis-h"></i>
+                <% end %>
+              </div>
+            </div>
+            <div class ="post-picture">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+            </div>
+            <div class ="data">
+              <div class ="data-share">
+                <div class ="share-icon">
+                  <%= link_to('#') do %>
+                    <i class="far fa-heart"></i>
+                  <% end %>
+
+                  <%= link_to('#') do %>
+                    <i class="far fa-comment"></i>
+                  <% end %>
+                </div>
+              </div>
+              <div class ="data-comments">
+                <div class ="party-comment">
+                  <div class ="main-comment">
+                    <%= link_to('#') do %>
+                      jsbryuji_official
+                    <% end %> 
+                    「Numero TOKYO」2.28 ✨✨✨✨✨✨✨@numerotokyo #numerotokyo #JSB #三代目
+                  </div>
+                </div>
+                <div class ="post-data">
+                  <%= link_to('#') do %>
+                    コメント2892件をすべて見る
+                  <% end %>
+                </div>
+                <div class ="new-coment">
+                  <div class ="comment-user">
+                    <%= link_to('#') do %>
+                      jsbryuji_official
+                    <% end %> 
+                    やば😍😍😍😍😍😍
+                  </div>
+                  <div class ="comment-user">
+                    <%= link_to('#') do %>
+                      jsbryuji_official
+                    <% end %> 
+                    やば😍😍😍😍😍😍
+                  </div>
+                </div>
+                <div class ="data-time">10時間前</div>
+              </div>
+              <div class ="comment-functiou">
+                <div class ="comment-functiou__add">コメントを追加...</div>
+                <div class ="comment-functiou__btn">
+                  <%= link_to('#') do %>
+                    投稿する
+                  <% end %> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class ="main-post">
+            <div class ="post-header">
+              <div class ="acount-id">
+                <%= link_to('#') do %>
+                  jsbryuji_official
+                <% end %>
+              </div>
+              <div class ="acount-managration">
+                <%= link_to('#') do %>
+                  <i class="fas fa-ellipsis-h"></i>
+                <% end %>
+              </div>
+            </div>
+            <div class ="post-picture">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+            </div>
+            <div class ="data">
+              <div class ="data-share">
+                <div class ="share-icon">
+                  <%= link_to('#') do %>
+                    <i class="far fa-heart"></i>
+                  <% end %>
+
+                  <%= link_to('#') do %>
+                    <i class="far fa-comment"></i>
+                  <% end %>
+                </div>
+              </div>
+              <div class ="data-comments">
+                <%= link_to('#') do %>
+                  jsbryuji_official
+                <% end %> 
+                「Numero TOKYO」2.28 ✨✨✨✨✨✨✨@numerotokyo #numerotokyo #JSB #三代目
+                <%= link_to('#') do %>
+                  コメント2892件をすべて見る
+                <% end %> 
+                teritamaichin やば😍😍😍😍😍😍
+                reina__0228 笑顔かわいすぎるーー🥺🤍🤍
+              </div>
+              <div class ="data-time">10時間前</div>
+              <div class ="comment-functiou">
+                <div class ="comment-function__add">コメントを追加...</div>
+                <div clsss ="comment-function__btn">投稿する</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body> 
+</html>
