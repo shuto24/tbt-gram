@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class ="main-all">
+      <div class ="header">
+        <div class ="header-main">
+          <div class ="main-home">
+            <%= link_to('#') do %>
+              <i class="fab fa-instagram"></i>
+                | tbtgram
+            <% end %>
+          </div>
+          <div class ="main-surch">
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"></button>
+            </form>
+          </div>
+          <div class ="main-icon">
+            <%= link_to('#') do %>
+              <i class="far fa-compass"></i>
+            <% end %>
+
+            <%= link_to('#') do %>
+              <i class="far fa-heart"></i>
+            <% end %>
+
+            <%= link_to home_index_path do %>
+              <i class="fas fa-home"></i>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="main-body">
+          <div class="main-header">
+            <div class="main-header__top">
+              <div class="top-name">yoruhakurai</div>
+              <%= link_to edit_user_registration_path do %>
+                <div class="top-btn">プロフィールを編集</div>
+              <% end %>
+              <%= link_to destroy_user_session_path, method: :delete, class: 'btn' do %>
+                <div class="second-btn">ログアウト</div>
+              <% end %>
+            </div>
+            <div class="main-header__middle">
+              <div class="middle-post">投稿86件</div>
+              <div class="middle-follower">フォロワー174人</div>
+              <div class="middle-follow">フォロー中107人</div>
+            </div>
+            <div class="main-header__bottom">
+              <div class="bottom-user-name">芳賀真樹</div>
+              <div class="bottom-profile">弾き語り ／ なりせば 歌 ギター 作詞曲 ／ 紫 ／ 赤ワイン</div>
+            </div>
+          </div>
+          <div class="pictures">
+            <div class="main-picture">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+              <img src="https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg" alt="picture1" class="share-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body> 
+</html>
